@@ -33,10 +33,10 @@ function showWeatherData(data) {
     cityInfo.textContent = `${cityName}, ${countryName}`
 
     const temInfo = document.createElement('p')
-    temInfo.textContent = `La temperatura es de: ${Math.floor(temp - diffKelvin)}°C`
+    temInfo.textContent = `La temperatura es de ${Math.floor(temp - diffKelvin)}°C`
 
     const humidityInfo = document.createElement('p')
-    humidityInfo.textContent = `La humedad es del: ${humidity}%`
+    humidityInfo.textContent = `La humedad es del ${humidity}%`
 
     const icoInfo = document.createElement('img')
     icoInfo.src = `https://openweathermap.org/img/wn/${icon}@2x.png`
